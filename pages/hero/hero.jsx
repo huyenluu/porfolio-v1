@@ -1,29 +1,8 @@
 import Image from 'next/image'
-import Link from 'next/link'
+import { NavIcon } from '../../components/icon'
 import { BsFillMoonStarsFill, BsGithub, BsLinkedin } from "react-icons/bs"
 import { SiFrontendmentor } from "react-icons/si"
-import { IconContext } from "react-icons"
 
-const NavIcon = ({ iconComponent, className, href, ariaLabel }) => {
-    return (
-        <IconContext.Provider
-        value={{ 
-            className: `${className} cursor-pointer text-white hover:text-green transition-colors duration-200 ease-in-out`,
-            size:  '1.3rem'
-        }}
-        >
-        {typeof href === "string" ? (
-            <li>
-            <Link href={href} target="_blank" aria-label={ariaLabel}>
-                {iconComponent}
-            </Link>
-            </li>
-        ) : (
-            <li>{iconComponent}</li>
-        )}
-        </IconContext.Provider>
-    );
-}
 const Hero = () => {
     return (
     <>
@@ -60,7 +39,7 @@ const Hero = () => {
             </nav>
         </header>
         <section className="container md:-mt-16 lg:relative">
-            <div className="pb-14 border-b border-solid border-white
+            <div className="pb-14 
                             lg:min-h-[calc(42.2rem-3.5rem)]"
             >
             <div className="flex items-center">
@@ -112,17 +91,8 @@ const Hero = () => {
                     </span>
                     .
                     </h1>
-                <p className="text-p mb-6 md:mb-8">I'm a passionate Frontend Developer with a love for crafting captivating interfaces that bring ideas and designs to life. Collaborating with experienced senior developers and designers has elevated my skills and raised my standards, inspiring me to create exceptional user experiences.
+                <p className="text-p mb-6 md:mb-8 max-w-md">I'm a passionate Frontend Developer with a love for crafting captivating interfaces that bring ideas and designs to life. Collaborating with experienced senior developers and designers has elevated my skills and raised my standards, inspiring me to create exceptional user experiences.
                 </p>
-                <a
-                    href="#contact"
-                    className="inline-block text-white py-3 text-heading-s uppercase
-                            bg-green-gradient bg-[0_100%] bg-repeat-x bg-[length:8px_2px]
-                            transition-colors duration-200 ease-in-out
-                            hover:text-green hover:no-underline "
-                >
-                    My resume
-                </a>
                 </div>
             </div>
             </div>
