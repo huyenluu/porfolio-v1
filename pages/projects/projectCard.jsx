@@ -16,7 +16,7 @@ const ProjectCard = ({
 }) => {
     return (
         <motion.div
-            className={`bg-grey-dark relative z-10 h-[550px]  w-full items-stretch justify-center overflow-hidden rounded-3xl bg-center py-0 sm:h-[700px] sm:w-[100%] md:h-[650px] md:w-[100%] lg:h-[500px]`}
+            className={`bg-green-bg-gradient relative z-10 h-[550px]  w-full items-stretch justify-center overflow-hidden rounded-3xl bg-center py-0 sm:h-[700px] sm:w-[100%] md:h-[650px] md:w-[100%] lg:h-[500px]`}
         >
             <Image
                 src={image}
@@ -63,10 +63,10 @@ const ProjectCard = ({
                     } mb-10  md:mb-16 lg:mb-14 `}
             >
                 <div className="max-w-[90%] text-[40px] leading-none text-white md:text-[44px] md:leading-none lg:max-w-[450px] lg:text-[48px] lg:leading-none">{name}</div>
-                <div className="mt-4 w-[90%] max-w-[457px] text-[16px] font-semibold text-[#95979D] ">{description}</div>
+                <div className="mt-4 w-[90%] max-w-[457px] text-[16px] font-semibold text-white ">{description}</div>
                 <div className="mt-9 flex gap-4">
                     {technologies.map((tech, id) => (
-                        <div className="text-[14px] font-bold uppercase md:text-[16px] lg:text-[18px]">{tech}</div>
+                        <div className="text-[14px] font-bold uppercase md:text-[16px] lg:text-[18px]" key={id}>{tech}</div>
                     ))}
                 </div>
             </div>

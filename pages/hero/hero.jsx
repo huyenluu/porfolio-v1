@@ -5,40 +5,38 @@ import { SiFrontendmentor } from "react-icons/si"
 
 const Hero = () => {
     return (
-    <>
-        <header className="container relative">
-            <nav
-                className="flex justify-center items-center flex-wrap gap-[20px_25px]
-                            py-10 z-10 relative  
-                            md:justify-between"
-            >
-                <h1 className="font-burton text-2xl text-center flex-[1_0_100%]
-                            transition-colors duration-200 ease-in-out
-                            hover:text-green 
-                            md:flex-1 md:text-left ">
-                    huyenluu.
-                </h1>
-                <ul className="flex gap-6">
-                    <NavIcon
-                        iconComponent={<BsGithub />}
-                        href="https://github.com/huyenluu"
-                        ariaLabel="View GitHub Profile"
-                    />
-                    <NavIcon
-                        iconComponent={<BsLinkedin />}
-                        href="https://www.linkedin.com/in/huyen-luu-59401366/"
-                        ariaLabel="View LinkedIn Profile"
-                    />
-                    <NavIcon
-                        iconComponent={<SiFrontendmentor />}
-                        href="https://www.frontendmentor.io/profile/huyenluu"
-                        ariaLabel="View Frontend Mentor Profile"
-                    />
-                    <NavIcon iconComponent={<BsFillMoonStarsFill />} />
-                </ul>
-            </nav>
-        </header>
-        <section className="container md:-mt-16 lg:relative">
+    <section className="container relative">
+        <nav
+            className="flex justify-center items-center flex-wrap gap-[20px_25px]
+                        py-10 z-10 relative  
+                        md:justify-between"
+        >
+            <h1 className="font-burton text-2xl text-center flex-[1_0_100%]
+                        transition-colors duration-200 ease-in-out
+                        hover:text-green 
+                        md:flex-1 md:text-left ">
+                huyenluu.
+            </h1>
+            <ul className="flex gap-6">
+                <NavIcon
+                    iconComponent={<BsGithub />}
+                    href="https://github.com/huyenluu"
+                    ariaLabel="View GitHub Profile"
+                />
+                <NavIcon
+                    iconComponent={<BsLinkedin />}
+                    href="https://www.linkedin.com/in/huyen-luu-59401366/"
+                    ariaLabel="View LinkedIn Profile"
+                />
+                <NavIcon
+                    iconComponent={<SiFrontendmentor />}
+                    href="https://www.frontendmentor.io/profile/huyenluu"
+                    ariaLabel="View Frontend Mentor Profile"
+                />
+                <NavIcon iconComponent={<BsFillMoonStarsFill />} />
+            </ul>
+        </nav>
+        <div className="md:-mt-16 lg:relative">
             <div className="pb-14 
                             lg:min-h-[calc(42.2rem-3.5rem)]"
             >
@@ -54,8 +52,8 @@ const Hero = () => {
                             xl:right-16"
                 >
                 <Image
-                    className="grayscale w-full"
-                    src="/hl-profile2.webp"
+                    className="grayscale"
+                    src="/hl-profile.png"
                     alt="Huyen Luu profile picture"
                     width={424}
                     height={589}
@@ -91,13 +89,15 @@ const Hero = () => {
                     </span>
                     .
                     </h1>
-                <p className="text-p mb-6 md:mb-8 max-w-md">I'm a passionate Frontend Developer with a love for crafting captivating interfaces that bring ideas and designs to life. Collaborating with experienced senior developers and designers has elevated my skills and raised my standards, inspiring me to create exceptional user experiences.
-                </p>
+                        <p className="text-p max-w-md">
+                            I'm a passionate Frontend Developer with a love for crafting captivating interfaces that bring ideas and designs to life. 
+                            {/* Collaborating with experienced senior developers and designers has elevated my skills and raised my standards, inspiring me to create exceptional user experiences. */}
+                        </p>
                 </div>
             </div>
             </div>
-        </section>
-    </>
+        </div>
+    </section>
     );
 }
 export default Hero;
