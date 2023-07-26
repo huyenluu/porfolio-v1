@@ -20,7 +20,11 @@ module.exports = {
         grotesk: '--font-grotesk',
       },
       fontSize: {
-        p: ['1.125rem','1.75rem'],
+        // p: ['1.125rem','1.75rem'],
+        p: ['1rem',{
+          lineHeight: '1.625rem',
+          fontWeight: '500',
+        }],
         'heading-s':['1rem',{
           lineHeight: '1.625rem',
           letterSpacing: '0.143rem',
@@ -66,11 +70,13 @@ module.exports = {
       },
       backgroundImage: {
         'green-gradient': `linear-gradient(to right, #4EE1A0 75%, #4EE1A0 75%)`,
+        'green-bg-gradient': `linear-gradient(to right, #8360c3, #4EE1A0)`,
         'grey-gradient': `linear-gradient(180deg, rgba(36,36,36,0) 0%, #242424 100%)`,
         'profile-pic': 'url(/hl-profile.webp)'
       }
     },
   },
-  plugins: [],
+  plugins: [
+    // require('@tailwindcss/forms'),
+  ],
 }
-
