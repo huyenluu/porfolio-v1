@@ -46,9 +46,7 @@ const Hero = () => {
                             flex flex-col justify-end shrink-0
                             md:w-[42%] md:max-w-[27.8rem] md:h-[37.5rem]
                             md:-top-14 md:left-auto md:-right-6 md:-translate-x-0
-                            md:order-2
-                            lg:right-8
-                            xl:right-16"
+                            md:order-2"
                 >
                 <Image
                     className="grayscale w-auto h-auto"

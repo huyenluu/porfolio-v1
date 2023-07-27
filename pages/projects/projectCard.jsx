@@ -15,7 +15,10 @@ const ProjectCard = ({
 }) => {
     return (
         <motion.div
-            className={`relative z-10 h-[550px]  w-full items-stretch justify-center overflow-hidden rounded-3xl bg-center py-0 sm:h-[700px] sm:w-[100%] md:h-[650px] md:w-[100%] lg:h-[500px]`}
+            className={`relative z-10 h-[550px]  w-full items-stretch justify-center overflow-hidden rounded-3xl bg-center 
+                        py-0 shadow-lg shadow-slate-500 hover:shadow-lg hover:shadow-green border-grey-dark border
+                        transition-shadow duration-200 ease-in-out
+                        sm:h-[700px] sm:w-[100%] md:h-[650px] md:w-[100%] lg:h-[500px]`}
         >
             <Image
                 src={image}
@@ -30,13 +33,13 @@ const ProjectCard = ({
             
             </div>
             <div className={`absolute text-white  ${!(id % 2 === 0)
-                        ? "right-0 top-32 mr-0 ml-10 md:right-0 md:ml-0 lg:right-0 lg:top-40  lg:mr-4"
-                        : "left-10 top-32 ml-0 md:mr-12 lg:top-34 lg:ml-4"
+                        ? "right-0 top-10 mr-0 ml-10 md:right-0 md:ml-0 lg:right-0 lg:top-32  lg:mr-4"
+                        : "left-10 top-10 ml-0 md:mr-12 lg:top-28 lg:ml-4"
                     } mb-10  md:mb-16 lg:mb-14 max-w-[445px] `}
             >
                 <div className="max-w-[90%] text-[40px] leading-none text-white md:text-[44px] md:leading-none lg:max-w-[450px] lg:text-[48px] lg:leading-none">{name}</div>
                 <div className="mt-4 w-[90%] max-w-[457px] text-[16px] font-semibold text-white ">{description}</div>
-                <div className="mt-9 flex gap-4 flex-wrap ">
+                <div className="mt-4 flex gap-4 flex-wrap lg:mt-8 ">
                     {technologies && technologies.map((tech, id) => (
                         <div className="text-[14px] font-bold uppercase md:text-[16px] lg:text-[18px]" key={id}>{tech}</div>
                     ))}
