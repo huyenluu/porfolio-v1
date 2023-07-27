@@ -36,3 +36,13 @@ img {
   height: 1px;
   overflow: hidden;
 }
+
+@layer components {
+  .green-underline-header {
+    @apply text-white py-2 uppercase cursor-pointer inline-block
+    bg-green-gradient bg-[0_100%] bg-repeat-x bg-[length:8px_2px]
+    transition-colors duration-200 ease-in-out
+    hover:text-green hover:no-underline
+    disabled:hover:text-white;
+  }
+}

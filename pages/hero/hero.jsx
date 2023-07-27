@@ -17,7 +17,7 @@ const Hero = () => {
                         md:flex-1 md:text-left ">
                 huyenluu.
             </h1>
-            <ul className="flex gap-6">
+            <ul className="flex gap-6 items-center">
                 <NavIcon
                     iconComponent={<BsGithub />}
                     href="https://github.com/huyenluu"
@@ -33,7 +33,6 @@ const Hero = () => {
                     href="https://www.frontendmentor.io/profile/huyenluu"
                     ariaLabel="View Frontend Mentor Profile"
                 />
-                <NavIcon iconComponent={<BsFillMoonStarsFill />} />
             </ul>
         </nav>
         <div className="md:-mt-16 lg:relative">
@@ -76,8 +75,8 @@ const Hero = () => {
                     width={129}
                     height={129}
                 />
-                <div className="relative text-center mt-64 z-[4]
-                                md:text-left md:mt-24 md:max-w-[58%]"
+                <div className="relative text-center mt-64 z-[4] flex flex-col items-center
+                                md:text-left md:mt-24 md:max-w-[58%] md:items-start"
                 >
                     <h1 className="mb-6 text-heading-m font-clamp
                                 md:mb-16"
@@ -89,10 +88,19 @@ const Hero = () => {
                     </span>
                     .
                     </h1>
-                        <p className="text-p max-w-md">
-                            I'm a passionate Frontend Developer with a love for crafting captivating interfaces that bring ideas and designs to life. 
-                            {/* Collaborating with experienced senior developers and designers has elevated my skills and raised my standards, inspiring me to create exceptional user experiences. */}
-                        </p>
+                    <p className="text-p max-w-md mb-6">
+                        I'm a passionate Frontend Developer with a love for crafting captivating interfaces that bring ideas and designs to life. 
+                        {/* Collaborating with experienced senior developers and designers has elevated my skills and raised my standards, inspiring me to create exceptional user experiences. */}
+                    </p>
+                    <a
+                        href="#contact"
+                        className="text-white py-2 text-heading-s uppercase
+                                bg-green-gradient bg-[center_100%] bg-repeat-x bg-[length:8px_2px]
+                                transition-colors duration-200 ease-in-out
+                                hover:text-green hover:no-underline max-w-[151px]"
+                    >
+                        View resume
+                    </a>
                 </div>
             </div>
             </div>

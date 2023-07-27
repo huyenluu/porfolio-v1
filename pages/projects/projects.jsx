@@ -13,7 +13,7 @@ const Projects = () => {
                 <a
                     href="#contact"
                     className="text-white py-2 text-heading-s uppercase
-                            bg-green-gradient bg-[0_100%] bg-repeat-x bg-[length:8px_2px]
+                            bg-green-gradient bg-[center_100%] bg-repeat-x bg-[length:8px_2px]
                             transition-colors duration-200 ease-in-out
                             hover:text-green hover:no-underline "
                 >
