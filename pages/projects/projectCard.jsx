@@ -11,7 +11,6 @@ const ProjectCard = ({
     github,
     demo,
     image,
-    available,
 }) => {
     return (
         <motion.div
@@ -27,33 +26,19 @@ const ProjectCard = ({
                 className={`absolute top-0 text-[#0E1016] ${id % 2 === 0 ? "left-0 ml-8 lg:ml-14" : "right-0 mr-8 lg:mr-14"
                     } mt-6 flex  items-center justify-center gap-4 lg:mt-10`}
             >
-                {available ? (
-                    <>
-                        <NavIcon
-                            iconComponent={<BsGithub />}
-                            href={github}
-                            ariaLabel="View GitHub Profile"
-                        />
-                        <NavIcon
-                            iconComponent={<BsLink45Deg />}
-                            href={demo}
-                            ariaLabel="Open Live Demo"
-                        />
-                    </>
-                ) : (
-                    <div className=" flex items-center justify-center gap-4">
-                        <NavIcon
-                            iconComponent={<BsGithub />}
-                            href={github}
-                            ariaLabel="View GitHub Profile"
-                        />
-                        <div className=" rounded-xl bg-white px-4 py-2 md:px-5 md:py-3 lg:px-6 lg:py-4">
-                            <h3 className="text-[16px] md:text-[18px] lg:text-[20px] ">
-                                Coming soon
-                            </h3>
-                        </div>
-                    </div>
-                )}
+            
+            <>
+                <NavIcon
+                    iconComponent={<BsGithub />}
+                    href={github}
+                    ariaLabel="View GitHub Profile"
+                />
+                <NavIcon
+                    iconComponent={<BsLink45Deg />}
+                    href={demo}
+                    ariaLabel="Open Live Demo"
+                />
+            </>
             </div>
             <div
                 className={`absolute text-white  ${!(id % 2 === 0)
@@ -64,7 +49,7 @@ const ProjectCard = ({
                 <div className="max-w-[90%] text-[40px] leading-none text-white md:text-[44px] md:leading-none lg:max-w-[450px] lg:text-[48px] lg:leading-none">{name}</div>
                 <div className="mt-4 w-[90%] max-w-[457px] text-[16px] font-semibold text-white ">{description}</div>
                 <div className="mt-9 flex gap-4">
-                    {technologies.map((tech, id) => (
+                    {technologies && technologies.map((tech, id) => (
                         <div className="text-[14px] font-bold uppercase md:text-[16px] lg:text-[18px]" key={id}>{tech}</div>
                     ))}
                 </div>
