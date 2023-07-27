@@ -46,3 +46,9 @@ img {
     disabled:hover:text-white;
   }
 }
+
+section,footer{
+  overflow: hidden;
+  white-space: wrap;
+  word-break: break-word;
+}
