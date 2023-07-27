@@ -7,7 +7,6 @@ import useToast from '../../components/toast';
 
 const InputField = (props) => {
     const [field, meta] = useField(props);
-    console.log(meta)
     const inputStyles = "w-full py-4 px-6 border-b border-white bg-transparent text-base text-white placeholder:uppercase placeholder:opacity-50 focus:border-green focus:outline-none focus:invalid:border-red focus:invalid:text-red"
     return (
         <div className="relative mb-4 group">

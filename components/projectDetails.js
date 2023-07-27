@@ -7,7 +7,7 @@ export const devProjects = [
         technologies: ["React", "CSS", "Firebase"],
         github: "https://github.com/huyenluu/Invoice-management",
         demo: " papaya-naiad-036400.netlify.app ",
-        image: require("../../public/invoice-screens.png"),
+        image: require("../public/invoice-screens.png"),
         available: true,
     },
     {
@@ -18,7 +18,7 @@ export const devProjects = [
         technologies: ["React", "CSS", "Firebase"],
         github: "https://github.com/huyenluu/Invoice-management",
         demo: " papaya-naiad-036400.netlify.app ",
-        image: require("../../public/invoice-screens.png"),
+        image: require("../public/invoice-screens.png"),
         available: true,
     },
     {
@@ -29,7 +29,7 @@ export const devProjects = [
         technologies: ["React", "CSS", "Firebase"],
         github: "https://github.com/huyenluu/Invoice-management",
         demo: " papaya-naiad-036400.netlify.app ",
-        image: require("../../public/invoice-screens.png"),
+        image: require("../public/invoice-screens.png"),
         available: true,
     },
 ]

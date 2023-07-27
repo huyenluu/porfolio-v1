@@ -1,6 +1,5 @@
 import { NavIcon } from '../../components/icon'
 import { BsGithub,BsLink45Deg } from "react-icons/bs"
-import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
