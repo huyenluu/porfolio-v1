@@ -51,7 +51,7 @@ const Hero = () => {
                             xl:right-16"
                 >
                 <Image
-                    className="grayscale"
+                    className="grayscale w-auto h-auto"
                     src="/hl-profile.png"
                     alt="Huyen Luu profile picture"
                     width={424}
@@ -93,7 +93,8 @@ const Hero = () => {
                         {/* Collaborating with experienced senior developers and designers has elevated my skills and raised my standards, inspiring me to create exceptional user experiences. */}
                     </p>
                     <a
-                        href="#contact"
+                        href="https://drive.google.com/file/d/1yLp29N5jCV1_JroKIgArD7dlGd29GQEK/view"
+                        target='_blank'
                         className="text-white py-2 text-heading-s uppercase
                                 bg-green-gradient bg-[center_100%] bg-repeat-x bg-[length:8px_2px]
                                 transition-colors duration-200 ease-in-out

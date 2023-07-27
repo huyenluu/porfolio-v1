@@ -11,10 +11,11 @@ const ProjectCard = ({
     github,
     demo,
     image,
+    available,
 }) => {
     return (
         <motion.div
-            className={`bg-green-bg-gradient relative z-10 h-[550px]  w-full items-stretch justify-center overflow-hidden rounded-3xl bg-center py-0 sm:h-[700px] sm:w-[100%] md:h-[650px] md:w-[100%] lg:h-[500px]`}
+            className={`relative z-10 h-[550px]  w-full items-stretch justify-center overflow-hidden rounded-3xl bg-center py-0 sm:h-[700px] sm:w-[100%] md:h-[650px] md:w-[100%] lg:h-[500px]`}
         >
             <Image
                 src={image}
@@ -27,32 +28,49 @@ const ProjectCard = ({
                     } mt-6 flex  items-center justify-center gap-4 lg:mt-10`}
             >
             
-            <>
-                <NavIcon
-                    iconComponent={<BsGithub />}
-                    href={github}
-                    ariaLabel="View GitHub Profile"
-                />
-                <NavIcon
-                    iconComponent={<BsLink45Deg />}
-                    href={demo}
-                    ariaLabel="Open Live Demo"
-                />
-            </>
             </div>
-            <div
-                className={`absolute text-white  ${!(id % 2 === 0)
-                        ? "right-0 top-32 mr-0 ml-10 md:right-0 md:ml-0 lg:right-0 lg:top-60  lg:mr-4"
-                        : "left-10 top-32 ml-0 md:mr-12 lg:top-52 lg:ml-4"
-                    } mb-10  md:mb-16 lg:mb-14 `}
+            <div className={`absolute text-white  ${!(id % 2 === 0)
+                        ? "right-0 top-32 mr-0 ml-10 md:right-0 md:ml-0 lg:right-0 lg:top-40  lg:mr-4"
+                        : "left-10 top-32 ml-0 md:mr-12 lg:top-34 lg:ml-4"
+                    } mb-10  md:mb-16 lg:mb-14 max-w-[445px] `}
             >
                 <div className="max-w-[90%] text-[40px] leading-none text-white md:text-[44px] md:leading-none lg:max-w-[450px] lg:text-[48px] lg:leading-none">{name}</div>
                 <div className="mt-4 w-[90%] max-w-[457px] text-[16px] font-semibold text-white ">{description}</div>
-                <div className="mt-9 flex gap-4">
+                <div className="mt-9 flex gap-4 flex-wrap ">
                     {technologies && technologies.map((tech, id) => (
                         <div className="text-[14px] font-bold uppercase md:text-[16px] lg:text-[18px]" key={id}>{tech}</div>
                     ))}
                 </div>
+                {available ? 
+                (<div className='flex gap-4 mt-8'>
+                    <NavIcon
+                        iconComponent={<BsGithub />}
+                        href={github}
+                        disabled={available}
+                        ariaLabel="View GitHub Profile"
+                        className="disabled:opacity-10"
+                    />
+                    <NavIcon
+                        iconComponent={<BsLink45Deg />}
+                        available href={available}
+                        disabled={available}
+                        ariaLabel="Open Live Demo"
+                        className="disabled:opacity-10"
+                    />
+                </div>)
+                : (<div className='flex gap-4 mt-8 group'>
+                    <NavIcon
+                        iconComponent={<BsGithub />}
+                        ariaLabel="View GitHub Profile"
+                        className="opacity-50 hover:text-white"
+                    />
+                    <NavIcon
+                        iconComponent={<BsLink45Deg />}
+                        ariaLabel="Open Live Demo"
+                        className="opacity-50 hover:text-white"
+                    />
+                    <div className='invisible group-hover:visible italic text-sm'>Coming soon...</div>
+                </div>)}
             </div>
         </motion.div>
     );

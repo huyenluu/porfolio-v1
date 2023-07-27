@@ -6,6 +6,7 @@ const FRONTEND_TOOLS = [
     "NextJs",
     "Redux",
     "Redux Toolkit",
+    "Angular.js",
     "React Testing Library",
     "Git/GitHub",
     "HTML5",
