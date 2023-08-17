@@ -19,7 +19,7 @@ export default function Tooltip({ children, content }) {
         >
             {children}
             {visible && (
-                <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-3 p-2 rounded-sm bg-slate-700 text-white whitespace-nowrap z-10">
+                <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-3 p-1 rounded-md bg-grey-dark text-white whitespace-nowrap z-10">
                     {content}
                 </div>
             )}

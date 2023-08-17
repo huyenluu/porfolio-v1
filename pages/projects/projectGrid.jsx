@@ -1,5 +1,5 @@
 import ProjectCard from './projectCard';
-import { devProjects } from './projectDetails';
+import { devProjects } from '../../components/projectDetails';
 
 const ProjectGrid = () => {
     return (

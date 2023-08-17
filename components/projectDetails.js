@@ -14,7 +14,7 @@ export const devProjects = [
         ],
         github: 'https://github.com/huyenluu/audiophile-ecomerce-website',
         demo: 'https://audiophile-ecomerce-website-d397zimxk-huyenluu.vercel.app/',
-        image: require('../../public/audiophile-eshop.webp'),
+        image: require('../public/audiophile-eshop.webp'),
         available: true,
     },
     {
@@ -25,7 +25,7 @@ export const devProjects = [
         technologies: ['React', 'Sass', 'Firebase'],
         github: 'https://github.com/huyenluu/Invoice-management',
         demo: 'https://invoice-management-taupe.vercel.app',
-        image: require('../../public/invoice-app.webp'),
+        image: require('../public/invoice-app.webp'),
         available: true,
     },
     {
@@ -36,7 +36,7 @@ export const devProjects = [
         technologies: ['React', 'TailwindCss', 'Chart.js'],
         github: '',
         demo: '',
-        image: require('../../public/pomodoro-app.webp'),
+        image: require('../public/pomodoro-app.webp'),
         available: false,
     },
 ];

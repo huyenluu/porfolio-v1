@@ -60,7 +60,7 @@ const ProjectCard = ({
                 </div>
                 {available ? (
                     <div className="flex gap-4 mt-8">
-                        <Tooltip>
+                        <Tooltip content="View code">
                             <NavIcon
                                 iconComponent={<BsGithub />}
                                 href={github}
@@ -69,7 +69,7 @@ const ProjectCard = ({
                                 className="disabled:opacity-10"
                             />
                         </Tooltip>
-                        <Tooltip>
+                        <Tooltip content="View demo">
                             <NavIcon
                                 iconComponent={<BsLink45Deg />}
                                 href={demo}
