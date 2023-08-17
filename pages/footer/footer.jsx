@@ -1,6 +1,6 @@
-import { NavIcon } from '../../components/icon'
-import { BsFillMoonStarsFill, BsGithub, BsLinkedin } from "react-icons/bs"
-import { SiFrontendmentor } from "react-icons/si"
+import { NavIcon } from '../../components/icon';
+import { BsFillMoonStarsFill, BsGithub, BsLinkedin } from 'react-icons/bs';
+import { SiFrontendmentor } from 'react-icons/si';
 
 export default function Footer() {
     return (
@@ -11,8 +11,10 @@ export default function Footer() {
                             py-10 z-10 relative  
                             md:justify-between"
             >
-                <h1 className="text-xl text-center flex-[1_0_100%]
-                            md:flex-1 md:text-left ">
+                <h1
+                    className="text-xl text-center flex-[1_0_100%]
+                            md:flex-1 md:text-left "
+                >
                     copyright 2023
                 </h1>
                 <ul className="flex gap-6">
@@ -35,5 +37,5 @@ export default function Footer() {
                 </ul>
             </nav>
         </footer>
-    )
+    );
 }

@@ -4,51 +4,55 @@
 
 html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  line-height: 1.6;
-  font-size: 18px;
+    padding: 0;
+    margin: 0;
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        Segoe UI,
+        Roboto,
+        Oxygen,
+        Ubuntu,
+        Cantarell,
+        Fira Sans,
+        Droid Sans,
+        Helvetica Neue,
+        sans-serif;
+    line-height: 1.6;
+    font-size: 18px;
 }
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 img {
-  max-width: 100%;
-  display: block;
+    max-width: 100%;
+    display: block;
 }
 @font-face {
-  font-family: 'burtons';
-  src: url("../public/Burtons.otf");
+    font-family: 'burtons';
+    src: url('../public/Burtons.otf');
 }
 
 .font-clamp {
-  font-size: clamp(2.5rem, 0.5rem + 6.4vw, 5.5rem);
+    font-size: clamp(2.5rem, 0.5rem + 6.4vw, 5.5rem);
 }
 .visually-hidden {
-  position: absolute;
-  left: -10000px;
-  top: auto;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
 }
 
 @layer components {
-  .green-underline-header {
-    @apply text-white py-2 uppercase cursor-pointer inline-block
+    .green-underline-header {
+        @apply text-white py-2 uppercase cursor-pointer inline-block
     bg-green-gradient bg-[0_100%] bg-repeat-x bg-[length:8px_2px]
     transition-colors duration-200 ease-in-out
     hover:text-green hover:no-underline
     disabled:hover:text-white;
-  }
-}
-
-section,footer{
-  overflow: hidden;
-  white-space: wrap;
-  word-break: break-word;
+    }
 }

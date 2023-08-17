@@ -1,4 +1,4 @@
-import ProjectGrid from "./projectGrid";
+import ProjectGrid from './projectGrid';
 
 const Projects = () => {
     return (
@@ -10,18 +10,7 @@ const Projects = () => {
                 <h2 className="text-left text-heading-m text-white lg:text-heading-l">
                     Projects
                 </h2>
-                <a
-                    href="#contact"
-                    className="text-white py-2 text-heading-s uppercase
-                            bg-green-gradient bg-[center_100%] bg-repeat-x bg-[length:8px_2px]
-                            transition-colors duration-200 ease-in-out
-                            hover:text-green hover:no-underline "
-                >
-                    contact me
-                </a>
             </div>
-            
-
             <ProjectGrid />
         </section>
     );
