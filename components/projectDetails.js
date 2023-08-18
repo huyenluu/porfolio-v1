@@ -34,7 +34,7 @@ export const devProjects = [
         description:
             'Pomodoro app has provide some tricky challenges, including building a circular progress bar,a range of customizations, like colors and fonts.',
         technologies: ['React', 'TailwindCss', 'Chart.js'],
-        github: '',
+        github: 'https://github.com/huyenluu/pomodoro',
         demo: '',
         image: require('../public/pomodoro-app.webp'),
         available: false,
