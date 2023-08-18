@@ -64,7 +64,6 @@ const ProjectCard = ({
                             <NavIcon
                                 iconComponent={<BsGithub />}
                                 href={github}
-                                disabled={available}
                                 ariaLabel="View GitHub Profile"
                                 className="disabled:opacity-10"
                             />
