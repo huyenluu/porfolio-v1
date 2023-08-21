@@ -35,8 +35,8 @@ export const devProjects = [
             'Pomodoro app has provide some tricky challenges, including building a circular progress bar,a range of customizations, like colors and fonts.',
         technologies: ['React', 'TailwindCss', 'Chart.js'],
         github: 'https://github.com/huyenluu/pomodoro',
-        demo: '',
+        demo: 'https://pomodoro-black-phi.vercel.app/',
         image: require('../public/pomodoro-app.webp'),
-        available: false,
+        available: true,
     },
 ];
