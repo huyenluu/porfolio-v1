@@ -19,7 +19,7 @@ export const devProjects = [
     },
     {
         id: 2,
-        name: 'Invoices Manager',
+        name: 'Invoice Manager',
         description:
             'Invoice Manager is a responsive web app built with React and Firebase. Effortlessly create, edit, manage, and send invoices to your clients.',
         technologies: ['React', 'Sass', 'Firebase'],
@@ -33,7 +33,7 @@ export const devProjects = [
         name: 'Pomodoro App',
         description:
             'Pomodoro app has provide some tricky challenges, including building a circular progress bar,a range of customizations, like colors and fonts.',
-        technologies: ['React', 'TailwindCss', 'Chart.js'],
+        technologies: ['React', 'Styles-component', 'SVG', 'NextJs'],
         github: 'https://github.com/huyenluu/pomodoro',
         demo: 'https://pomodoro-black-phi.vercel.app/',
         image: require('../public/pomodoro-app.webp'),
