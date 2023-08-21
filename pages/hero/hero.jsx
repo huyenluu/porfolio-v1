@@ -25,7 +25,7 @@ const Hero = () => {
                     <Tooltip content="View Resume">
                         <NavIcon
                             iconComponent={<AiOutlineProfile />}
-                            href="https://drive.google.com/file/d/1yLp29N5jCV1_JroKIgArD7dlGd29GQEK/view"
+                            href="https://drive.google.com/file/d/1mdpH2x-1BS2fvXcYLFwp3jNB-RJ2kMKF/view?usp=drivesdk"
                             ariaLabel="View Resume"
                             className="w-6 h-6"
                         />
