@@ -1,5 +1,6 @@
 const FRONTEND_TOOLS = [
     'JavaScriptES6+',
+    'Typescript',
     'React',
     'NextJs',
     'Redux',
