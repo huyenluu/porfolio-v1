@@ -9,7 +9,7 @@ Welcome to my portfolio repository! This project showcases my skills, projects, 
 - **Dynamic Blogging**: Uses `gray-matter` and `remark` for markdown-based blogging.
 - **Animations**: Integrated with `framer-motion` for smooth and appealing animations.
 
-### Technologies Used
+## Technologies Used
 - **Core**: Next.js, React
 - **Styling**: TailwindCSS
 - **Utilities**: date-fns, formik, react-icons, sharp
@@ -39,3 +39,7 @@ Ensure you have Node.js and npm installed.
     npm run build
     # After building, you can start the production server with:
     npm run start
+   ```
+
+## Contributing
+Contributions, issues, and feature requests are welcome! Feel free to open an issue or submit a pull request.
