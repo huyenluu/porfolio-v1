@@ -10,9 +10,9 @@ Welcome to my portfolio repository! This project showcases my skills, projects, 
 - **Animations**: Integrated with `framer-motion` for smooth and appealing animations.
 
 ## Technologies Used
-- **Core**: Next.js, React
+- **Core**: React, Vite, TypeScript
 - **Styling**: TailwindCSS
-- **Utilities**: date-fns, formik, react-icons, sharp
+- **Linting & Formatting**: ESLint, Prettier
 
 ## Getting Started
 
@@ -24,7 +24,7 @@ Ensure you have Node.js and npm installed.
 
 1. Clone the repository:
    ```bash
-   git clone [repository_link](https://github.com/huyenluu/porfolio-v1.git)
+   git clone https://github.com/huyenluu/porfolio-v1.git
    cd porfolio-v1
    npm install
 2. Running the Portfolio Locally
